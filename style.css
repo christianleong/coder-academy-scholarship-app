@@ -1,0 +1,342 @@
+* {
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 50px;
+  z-index: 100;
+  /* background-color: #fdfdf7; */
+}
+
+h1 {
+  margin: 28px 0;
+}
+
+.add-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  background: rgb(253, 253, 247, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.name-header { 
+  font-family: "Satisfy", cursive;
+  font-size: 24px;
+}
+
+.name-header a, 
+.link-headers a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  display: table;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding: 0 20px;
+}
+
+.link-headers {
+  font-family: "Raleway", sans-serif;
+  color: #4a4a4a;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.link-headers a {
+  position: relative;
+}
+
+.link-headers a:after {
+  background: #4a4a4a;
+  height: 1px;
+  display: block;
+  position: absolute;
+  content: "";
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+
+.link-headers a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* content container */
+
+.content-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: rgb(253, 253, 247);
+}
+
+/* main content */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-bottom: 400px;
+}
+
+/* figma content */
+
+.figma-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 7876px;
+  margin-top: 200px;
+}
+
+/* Scroll down animation */
+
+.mouse-field {
+  display: block;
+  position: absolute;
+  color: #fff;
+  top: calc(12%);
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 5px transparent;
+  z-index: 2;
+}
+
+.mouse {
+  border: 2px solid #4a4a4a;
+  border-radius: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 35px;
+  -webkit-backface-visibility: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.mouse:after {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  height: 4px;
+  opacity: 1;
+  transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
+  animation: scroll 1.5s -1s cubic-bezier(.68, -.55, .265, 1.55) infinite;
+}
+
+@keyframes scroll {
+  10% {
+    height: 5px
+  }
+
+  15% {
+    height: 4px;
+    transform: scale(1) translateY(-1px)
+  }
+
+  85% {
+    transform: translateY(20px);
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+/* Figma line drawing */
+
+.line-container {
+  padding-top: 1000px;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.greyLine {
+  stroke: rgb(236, 236, 236);
+}
+
+.blackLine {
+  stroke: rgb(74, 74, 74);
+}
+
+.pinkDot {
+  stroke: rgb(255, 0, 131);
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+/* main text */
+
+.main-text {
+  width: 1060px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 3.2rem;
+  color: rgb(74, 74, 74);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* all */
+
+.malaysia-description,
+.australia-description,
+.accountant-description,
+.burnout-description,
+.lightbulb-description,
+.developer-description {
+  left: auto;
+  right: auto;
+  position: absolute;
+  text-align: left;
+  font-family: "Merriweather", serif;
+  opacity: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 0.1;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 22.4px;
+}
+
+/* malaysia */
+
+.malaysia-description {
+  top: 1100px;
+  left: 600px;
+}
+
+/* australia */
+
+.australia-description {
+  top: 2400px;
+  max-width: 460px;
+  opacity: 1;
+}
+
+/* accountant */
+
+.accountant-description {
+  top: 3550px;
+  left: 600px;
+  opacity: 1;
+}
+
+.burnout-description {
+  top: 4950px;
+  max-width: 460px;
+  opacity: 1;
+}
+
+.lightbulb-description {
+    top: 6150px;
+    left: 600px;
+    opacity: 1; 
+}
+
+.developer-description {
+  top: 7700px;
+  max-width: 460px;
+  opacity: 1;
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateY(50px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-height: 50px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 200;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer svg {
+  height: 50px;
+  width: 50px;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #4a4a4a;
+}
+
+/* ------------------------------------- */
+
+.about-content {
+  margin: 167px 50px;
+}
