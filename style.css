@@ -1,12 +1,10 @@
 * {
-  /* border: 1px solid blue; */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* homepage */
-
+/* Homepage */
 .home-content {
   display: flex;
   justify-content: center;
@@ -31,8 +29,7 @@ main {
   max-width: 1000px;
 }
 
-/* Ultimate Frisbee page */
-
+/* Ultimate Frisbee Page */
 .frisbee-main {
   position: relative;
   min-height: 100vh;
@@ -44,7 +41,6 @@ main {
 .flex-container {
   display: flex;
 }
-
 
 .frisbee-main h2 {
   padding-bottom: 20px;
@@ -60,13 +56,8 @@ main {
 }
 
 .mySlides img {
-  /* display: block; */
   width: 100%;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
-
-/* -------------------- */
 
 .slideshow-container {
   max-width: 1000px;
@@ -75,12 +66,10 @@ main {
   padding-top: 24px;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: block;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -97,19 +86,16 @@ main {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -119,7 +105,6 @@ main {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -128,7 +113,6 @@ main {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -140,13 +124,11 @@ main {
   transition: background-color 0.6s ease;
 }
 
-.dots >
-.active,
+.dots>.active,
 .dot:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -162,10 +144,7 @@ main {
   }
 }
 
-/* --------------------- */
-
 /* Navigation Bar */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -175,7 +154,6 @@ nav {
   right: 0;
   padding: 0 50px;
   z-index: 100;
-  /* background-color: #fdfdf7; */
 }
 
 h1 {
@@ -184,16 +162,16 @@ h1 {
 
 .add-shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-  background: rgb(253, 253, 247, 0.6);
+  background: rgba(253, 253, 247, 0.6);
   backdrop-filter: blur(5px);
 }
 
-.name-header { 
+.name-header {
   font-family: "Satisfy", cursive;
   font-size: 24px;
 }
 
-.name-header a, 
+.name-header a,
 .link-headers a {
   text-decoration: none;
   color: inherit;
@@ -240,8 +218,7 @@ li {
   left: 0;
 }
 
-/* content container */
-
+/* Content Container */
 .content-container {
   min-height: 100vh;
   display: flex;
@@ -250,8 +227,7 @@ li {
   background: rgb(253, 253, 247);
 }
 
-/* main content */
-
+/* Main Content */
 .main-content {
   display: flex;
   flex-direction: column;
@@ -259,8 +235,7 @@ li {
   padding-bottom: 400px;
 }
 
-/* figma content */
-
+/* Figma Content */
 .figma-content {
   display: flex;
   align-items: center;
@@ -270,8 +245,7 @@ li {
   margin-top: 200px;
 }
 
-/* Scroll down animation */
-
+/* Scroll Down Animation */
 .mouse-field {
   display: block;
   position: absolute;
@@ -318,12 +292,12 @@ li {
 
   15% {
     height: 4px;
-    transform: scale(1) translateY(-1px)
+    transform: scale(1) translateY(-1px);
   }
 
   85% {
     transform: translateY(20px);
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
@@ -331,8 +305,7 @@ li {
   }
 }
 
-/* Figma line drawing */
-
+/* Figma Line Drawing */
 .line-container {
   padding-top: 1000px;
 }
@@ -358,8 +331,7 @@ svg {
   stroke-miterlimit: 10;
 }
 
-/* main text */
-
+/* Main Text */
 .main-text {
   width: 1060px;
   position: absolute;
@@ -379,8 +351,7 @@ h2 {
   font-weight: 400;
 }
 
-/* all */
-
+/* Descriptions */
 .malaysia-description,
 .australia-description,
 .accountant-description,
@@ -408,22 +379,16 @@ p {
   margin-top: 22.4px;
 }
 
-/* malaysia */
-
 .malaysia-description {
   top: 1100px;
   left: 600px;
 }
-
-/* australia */
 
 .australia-description {
   top: 2400px;
   max-width: 460px;
   opacity: 1;
 }
-
-/* accountant */
 
 .accountant-description {
   top: 3550px;
@@ -438,9 +403,9 @@ p {
 }
 
 .lightbulb-description {
-    top: 6150px;
-    left: 600px;
-    opacity: 1; 
+  top: 6150px;
+  left: 600px;
+  opacity: 1;
 }
 
 .developer-description {
@@ -460,10 +425,10 @@ p {
   transform: translateY(0px);
 }
 
+/* Footer */
 footer {
   background-color: #4a4a4a;
   color: #fff;
-  /* position: fixed; */
   left: 0;
   bottom: 0;
   min-height: 50px;
@@ -494,8 +459,7 @@ footer svg {
   background-color: #4a4a4a;
 }
 
-/* ------------------------------------- */
-
+/* About Content */
 .about-content {
   margin: 167px 50px;
 }
