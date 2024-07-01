@@ -51,12 +51,7 @@ window.addEventListener("scroll", () => {
   // Update the last scroll percentage
   lastScrollPercentage = scrollPercentage;
 
-  // Debugging output
-  // console.log(`scrollPercentage: ${scrollPercentage}`);
-  // console.log(`pathLength: ${pathLength}`);
-  // console.log(`lastDrawLength: ${lastDrawLength}`);
 });
-
 
 /*------------------------------------------------------------ */
 
@@ -113,10 +108,6 @@ window.addEventListener("scroll", () => {
   // Update the last scroll percentage
   lastGreyScrollPercentage = greyScrollPercentage;
 
-  // Debugging output
-  // console.log(`greyScrollPercentage: ${greyScrollPercentage}`);
-  // console.log(`greyPathLength: ${greyPathLength}`);
-  // console.log(`lastGreyDrawLength: ${lastGreyDrawLength}`);
 });
 
 
@@ -175,12 +166,7 @@ window.addEventListener("scroll", () => {
   // Update the last scroll percentage
   lastPinkScrollPercentage = pinkScrollPercentage;
 
-  // Debugging output
-  // console.log(`pinkScrollPercentage: ${pinkScrollPercentage}`);
-  // console.log(`pinkPathLength: ${pinkPathLength}`);
-  // console.log(`lastPinkDrawLength: ${lastPinkDrawLength}`);
 });
-
 
 /*------------------------------------------------------------ */
 
@@ -202,33 +188,6 @@ window.addEventListener('scroll', () => {
     nav.classList.add("add-shadow");
   }
 })
-
-
-/*------------------------------------------------------------ */
-
-// const malaysiaDesc = document.querySelector(".malaysia-description");
-// const australiaDesc = document.querySelector(".australia-description");
-// const rectMY = malaysiaDesc.getBoundingClientRect()
-// const rectAUS = australiaDesc.getBoundingClientRect();
-// for (const key in rectMY) {
-//   if (typeof rectMY[key] !== "function") {
-//     console.log(`${key} : ${rectMY[key]}`);
-//   }
-// }
-// for (const key in rectAUS) {
-//   if (typeof rectAUS[key] !== "function") {
-//     console.log(`${key} : ${rectAUS[key]}`);
-//   }
-// }
-
-// window.addEventListener('scroll', () => {
-//   let scrollY = window.scrollY
-//   console.log(`scrollY: ${scrollY}`);
-
-//   if (scrollY >= 250) {
-//     malaysiaDesc.style.opacity = (scrollY / 800)
-//   }
-// })
 
 /*------------------------------------------------------------ */
 
@@ -255,6 +214,12 @@ function reveal() {
   }
 }
 
-
 /* ------------------------------------------------------------ */
 
+var animation = bodymovin.loadAnimation({
+  container: document.querySelector(".arrowContainer"),
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./assets/Animation - 1719812847981.json",
+});
