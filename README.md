@@ -3,9 +3,9 @@
 This is a creative project submission for Coder Academy's Diversity in Tech Scholarship, where I share my journey and why I decided to transitiion into Software Engineering.
 
 The design for this project was inspired by the following websites:
-[https://www.lemonade.com/giveback-2019](https://www.lemonade.com/giveback-2019)
-[https://godly.website/website/walter-sophia-533](https://godly.website/website/walter-sophia-533)
-[https://openingline.co/](https://openingline.co/)
+- [https://www.lemonade.com/giveback-2019](https://www.lemonade.com/giveback-2019)
+- [https://godly.website/website/walter-sophia-533](https://godly.website/website/walter-sophia-533)
+- [https://openingline.co/](https://openingline.co/)
 
 I hope you enjoy the animation.
 
